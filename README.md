@@ -7,8 +7,8 @@ This workspace aims to distribute reusable, independently versioned Apple media 
 These scripts are provided as **source builders**, not precompiled redistribution-ready binaries. They target macOS 15.4+ arm64 where supported; inspect each builder's prerequisites and validation notes. Fresh builds require Xcode/Command Line Tools, host build tools, internet access, and significant free disk space. A successful build on a second Mac is **not yet independently verified**.
 
 ```bash
-git clone <YOUR-REPOSITORY-URL>
-cd <YOUR-REPOSITORY-DIRECTORY>
+git clone https://github.com/flexvisual/ModFrameworks.git
+cd ModFrameworks
 chmod +x *.sh
 ./build_modmpv.sh --status
 ./build_modmpv.sh
