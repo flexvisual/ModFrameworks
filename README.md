@@ -14,7 +14,7 @@ chmod +x *.sh
 ./build_modmpv.sh
 ```
 
-Replace the placeholders with the actual repository URL and directory. No personal signing identity or Team ID is required to use the scripts. **Default `SIGN_MODE=auto`** selects the sole valid Apple Development certificate when exactly one is available; otherwise it uses ad-hoc signing. If multiple certificates exist, it will not guess which team to use. Set `CODESIGN_IDENTITY` explicitly or `SIGN_MODE=development` to require a specific signing configuration.
+No personal signing identity or Team ID is required to use the scripts. **Default `SIGN_MODE=auto`** selects the sole valid Apple Development certificate when exactly one is available; otherwise it uses ad-hoc signing. If multiple certificates exist, it will not guess which team to use. Set `CODESIGN_IDENTITY` explicitly or `SIGN_MODE=development` to require a specific signing configuration.
 
 | Invocation | Signing result |
 | --- | --- |
