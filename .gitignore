@@ -1,0 +1,26 @@
+# Hidden builder workspaces and transient build caches
+.modmpv-macos15/
+.modffmpeg-macos15/
+.modmkv-macos15/
+.modmediainfo-macos15/
+.build-HapInAVFoundation-framework/
+# Generated deliverables and compliance/source archives (retain locally)
+output-ModMPV/
+output-ModFFmpeg/
+output-ModMKV/
+output-ModMediaInfo/
+output-HapInAVFoundation/
+*.framework/
+*.xcframework/
+*.dSYM/
+*.log
+*.tar.gz
+*.zip
+.DS_Store
+# Never publish private credentials
+*.p12
+*.p8
+*.mobileprovision
+*.key
+.env
+.env.*
