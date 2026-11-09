@@ -2,6 +2,19 @@
 
 This workspace aims to distribute reusable, independently versioned Apple media frameworks. Each framework should be consumable by a standalone Xcode target, with its third-party dependencies statically linked where technically and legally appropriate. Some frameworks (notably ModMPV) legitimately require signed, bundled runtime dylibs. Build success is not release approval. See [TODO.md](./TODO.md) for acceptance requirements.
 
+## Contents
+
+- [Quick Start](#public-github-quick-start-macos-apple-silicon)
+- [HapInAVFoundation](#hapinavfoundation-source-repository-flexvisual-fork)
+- [Build Workflow](#current-build-and-documentation-workflow)
+- [ModMPV](#modmpv-apple-framework-builder--verified-november-9-2026)
+- [ModFFmpeg](#modffmpegframework--full-featured-gpl-disabled-ffmpeg--static-snappy)
+- [ModMKV](#modmkvframework--libebml--libmatroska-metadata-api)
+- [ModMediaInfo](#modmediainfoframework--mediainfolib--static-zenlib)
+- [Shared Verification Rules](#shared-packaging-and-verification-rules)
+- [Build History](#historical-version-notes)
+- [Disk Space Management](#disk-space-management-all-five-builders-november-9-2026)
+
 ## Public GitHub quick start (macOS Apple Silicon)
 
 These scripts are provided as **source builders**, not precompiled redistribution-ready binaries. They target macOS 15.4+ arm64 where supported; inspect each builder's prerequisites and validation notes. Fresh builds require Xcode/Command Line Tools, host build tools, internet access, and significant free disk space. A successful build on a second Mac is **not yet independently verified**.
